@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>address</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<!-- <link rel="stylesheet/less" type="text/css" href="css/style.less"> -->
+	<link rel="stylesheet" type="text/css" href="css/color-schemes/red/red.css">
+	
+	<script src="js/less.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script> 
+</head>
+<body>
+
+
+
+<div class="container">
+	<!-- address-box -->
+	<div class="page-box">
+		<div class="page-heading">
+			<h5>اضافه کردن آدرس</h5>
+		</div>
+		<div class="page-content">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="form-group">
+				    	<label for="name">نام تحویل گیرنده</label>
+				    	<input type="text" id="name" name="">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+				    	<label for="state">استان</label>
+						<select name="state" id="state" data-value="">
+							<option value="تهران">تهران</option>
+		                    <option value="آذربايجان شرقي">آذربايجان شرقي</option>
+		                    <option value="آذربايجان غربي">آذربايجان غربي</option>
+		                    <option value="اردبيل">اردبيل</option>
+		                    <option value="اصفهان">اصفهان</option>
+		                    <option value="ايلام">ايلام</option>
+		                    <option value="بوشهر">بوشهر</option>
+		                    <option value="چهارمحال بختياري">چهارمحال بختياري</option>
+		                    <option value="خراسان جنوبي">خراسان جنوبي</option>
+		                    <option value="خراسان رضوي">خراسان رضوي</option>
+		                    <option value="خراسان شمالي">خراسان شمالي</option>
+		                    <option value="خوزستان">خوزستان</option>
+		                    <option value="زنجان">زنجان</option>
+		                    <option value="سمنان">سمنان</option>
+		                    <option value="سيستان و بلوچستان">سيستان و بلوچستان</option>
+		                    <option value="فارس">فارس</option>
+		                    <option value="قزوين">قزوين</option>
+		                    <option value="قم">قم</option>
+		                    <option value="کرج">کرج</option>
+		                    <option value="كردستان">كردستان</option>
+		                    <option value="كرمان">كرمان</option>
+		                    <option value="كرمانشاه">كرمانشاه</option>
+		                    <option value="كهكيلويه و بويراحمد">كهكيلويه و بويراحمد</option>
+		                    <option value="گلستان">گلستان</option>
+		                    <option value="گيلان">گيلان</option>
+		                    <option value="لرستان">لرستان</option>
+		                    <option value="مازندران">مازندران</option>
+		                    <option value="مركزي">مركزي</option>
+		                    <option value="هرمزگان">هرمزگان</option>
+		                    <option value="همدان">همدان</option>
+		                    <option value="يزد">يزد</option>
+		                </select>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+				    	<label for="city">شهر</label>
+						<select name="city" id="city" data-value="">
+							<option value="تهران">تهران</option>
+		                    <option value="ورامين">ورامين</option>
+		                    <option value="فيروزكوه">فيروزكوه</option>
+		                    <option value="ري">ري</option>
+		                    <option value="دماوند">دماوند</option>
+		                    <option value="اسلامشهر">اسلامشهر</option>
+		                    <option value="رودهن">رودهن</option>
+		                    <option value="لواسان">لواسان</option>
+		                    <option value="بومهن">بومهن</option>
+		                    <option value="تجريش">تجريش</option>
+		                    <option value="فشم">فشم</option>
+		                    <option value="كهريزك">كهريزك</option>
+		                    <option value="پاكدشت">پاكدشت</option>
+		                    <option value="چهاردانگه">چهاردانگه</option>
+		                    <option value="شريف آباد">شريف آباد</option>
+		                    <option value="قرچك">قرچك</option>
+		                    <option value="باقرشهر">باقرشهر</option>
+		                    <option value="شهريار">شهريار</option>
+		                    <option value="رباط كريم">رباط كريم</option>
+		                    <option value="قدس">قدس</option>
+		                    <option value="ملارد">ملارد</option>
+		                </select>
+					</div>
+				</div>	
+				<div class="col-md-12">	
+					<div class="form-group">
+				    	<label for="textarea">نشانی</label>
+				    	<textarea id="textarea"></textarea>
+					</div>				
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+				    	<label for="phone">شماره تماس</label>
+				    	<input type="text" id="phone" name="">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+				    	<label for="post-code">کد پستی</label>
+				    	<input type="text" id="post-code" name="">
+					</div>
+				</div>		
+			</div>
+			<button class="button" type="submit">ارسال</button>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script> 
+	<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script> 
+
+
+
+
+</body>
+</html>

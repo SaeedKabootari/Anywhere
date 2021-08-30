@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>payment</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<!-- <link rel="stylesheet/less" type="text/css" href="css/style.less"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/color-schemes/grey/grey.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/color-schemes/green/green.css">
+
+
+	<script src="js/less.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script> 
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-9">
+			<!-- right-box -->
+				<div class="page-box section-vertical-distance ">
+					<div class="page-heading">
+						<h5>شیوه پرداخت</h5>
+					</div>
+					<div class="page-content">
+						<div class="shipping-methods">
+							<div class="row">
+								<div class="col-md-4">
+									<div id="online-payment" class="box payment-box">
+									    <div class="box-title">
+									        <h3>پرداخت آنلاین</h3>
+									    </div>
+									    <div class="box-content clearfix">
+									        <label for="online" class="new-price float-right">
+									            <strong>£4.95</strong>
+									        </label>
+									        <input type="radio" value="1" name="shipping_option" id="online" class="float-left">
+									    </div>          
+									</div>
+								</div>	
+								<div class="col-md-4">
+									<div id="cash-payment" class="box payment-box">
+									    <div class="box-title">
+									        <h3>پرداخت در محل</h3>
+									    </div>
+									    <div class="box-content clearfix">
+									        <label for="cash" class="new-price float-right">
+									            <strong>رایگان</strong>
+									        </label>
+									        <input type="radio" value="2" name="shipping_option" id="cash" class="float-left">
+									    </div>          
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="shipping-methods" id="show-me">
+							<div class="row">
+								<div class="col-lg-4">
+									<div class="box payment-box">
+									    <div class="box-title text-center">
+									        <img class="bank" src="images/mellatlogo.png">
+									    </div>
+									    <div class="box-content payment-box clearfix">
+									        <input type="radio" value="1" name="shipping_option" id="option1" class="float-left">
+									    </div>          
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="box payment-box">
+									    <div class="box-title text-center">
+									        <img class="bank" src="images/samanlogo.png">
+									    </div>
+									    <div class="box-content payment-box clearfix">
+									        <input type="radio" value="1" name="shipping_option" id="option1" class="float-left">
+									    </div>          
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="box payment-box">
+									    <div class="box-title text-center">
+									        <img class="bank" src="images/pasargadlogo.png">
+									    </div>
+									    <div class="box-content payment-box clearfix">
+									        <input type="radio" value="1" name="shipping_option" id="option1" class="float-left">
+									    </div>          
+									</div>
+								</div>						
+							</div>
+						</div>
+						<a class="button" href="#">بازگشت</a>
+						<button class="button" type="submit">تایید</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3">
+			<!-- left-box -->
+				<div class="page-box">
+					<div class="page-heading">
+						<h5>مجموع خرید شما</h5>
+					</div>
+					<div class="page-content">
+						<div class="price-list-wrapper">
+							<ul class="price-list">
+								<li>
+									مجموع تخفیف: 
+									<strong>£247.98</strong>
+								</li>
+								<li>
+									هزینه ارسال:
+									<strong>£247.98</strong>
+								</li>								
+								<li>
+									مجموع: 
+									<strong>£247.98</strong>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+
+
+
+
+
+
+<script>
+	jQuery(document).ready(function() {
+
+	(function() {
+	  $("#online-payment").on('click', function(e) {
+	      $('input#online').prop("checked", true);
+	      $('input#cash').prop("checked", false);
+	      $('#show-me').addClass('show'); 
+	  });
+
+	  $("#cash-payment").on('click', function(e) {
+	      $('input#online').prop("checked", false);
+	      $('input#cash').prop("checked", true);
+	      $('#show-me').removeClass('show'); 
+	  });
+	})();
+
+
+	(function() {
+			$('#show-me').on('click', '.box.payment-box', function(e) {
+				var radio = $(this).find(':radio');
+				radio.prop('checked', true);
+			});
+		})();
+
+
+	})
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script> 
+	<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script> 
+
+
+
+
+</body>
+</html>
